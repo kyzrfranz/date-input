@@ -5,7 +5,8 @@
   "dependencies": {
     "polymer": "Polymer/polymer#^1.4.0",
     "paper-dialog": "PolymerElements/paper-dialog#^1.1.0",
-    "paper-input": "PolymerElements/paper-input#^1.1.22"
+    "paper-input": "PolymerElements/paper-input#^1.1.22",
+    "paper-date-picker": "bendavis78/paper-date-picker#^1.2.0"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
