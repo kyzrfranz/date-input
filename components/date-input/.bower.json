@@ -1,0 +1,40 @@
+{
+  "name": "date-input",
+  "description": "Combination of paper-input and paper-date-picker using a dialog",
+  "main": "date-input.html",
+  "authors": [
+    "Thomas Hieber <thomas.hieber@gmail.com>"
+  ],
+  "license": "GPL 3.0",
+  "keywords": [
+    "polymer",
+    "web-components"
+  ],
+  "ignore": [
+    "**/.*",
+    "bower_components"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.4.0",
+    "paper-dialog": "PolymerElements/paper-dialog#^1.1.0",
+    "paper-input": "PolymerElements/paper-input#^1.1.22",
+    "paper-date-picker": "bendavis78/paper-date-picker#^1.2.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
+    "web-component-tester": "^4.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+  },
+  "homepage": "https://github.com/kyzrfranz/date-input",
+  "_release": "0ba5cddf01",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "0ba5cddf013e575cca0498aaf0dfba148e509f94"
+  },
+  "_source": "https://github.com/kyzrfranz/date-input.git",
+  "_target": "master",
+  "_originalSource": "kyzrfranz/date-input",
+  "_direct": true
+}
