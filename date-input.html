@@ -1,0 +1,77 @@
+<link rel="import" href="../paper-date-picker/paper-date-picker.html">
+<link rel="import" href="../paper-dialog/paper-dialog.html">
+<link rel="import" href="../paper-input/paper-input.html">
+<link rel="import" href="../paper-button/paper-button.html">
+<!--
+
+`date-input` combines a paper-input with a paper-date-picker (http://bendavis78.github.io/paper-date-picker/paper-date-picker/)
+
+
+Example:
+
+  <date-input value="{{date}}" id="date" placeholder="Date" label="Date"></date-input>
+
+
+@demo demo/index.html
+-->
+<dom-module is="date-input">
+  <template>
+    <style>
+
+    </style>
+    <paper-input on-tap="_openDialog" on-click="_openDialog" label="{{label}}" value="{{_displayDate}}"></paper-input>
+    <paper-dialog id="dialog" class="paper-date-picker-dialog input" modal="[[modal]]">
+      <paper-date-picker id="picker" min-date="[[minDate]]" date="{{_date}}"></paper-date-picker>
+      <div>
+        <paper-button raised dialog-confirm>OK</paper-button>
+      </div>
+    </paper-dialog>
+  </template>
+  <script>Polymer({
+    is: "date-input",
+    properties: {
+      /*
+       * Contains the selected date
+       * */
+      value:{
+        type: Date,
+        value: '',
+        notify:true
+      },
+      /*
+      * Display datepicker as a modal
+      * */
+      modal: Boolean,
+      /*
+      * minDate value from paper-date-picker
+      * */
+      minDate: {
+        type: Date
+      },
+      /*
+       * maxDate value from paper-date-picker
+       * */
+      maxDate: {
+        type: Date
+      },
+      _date: {
+        type: Date
+      },
+      _displayDate: {
+        type: String, computed: "_computeDisplayDate(_date)"
+      }
+    },
+    ready: function () {
+      this.minDate && (this._date = this.minDate);
+    },
+    _openDialog: function () {
+      this.$.dialog.open();
+    },
+    _computeDisplayDate: function (date) {
+      this.value = date;
+      return date.toLocaleDateString();
+    }
+  });</script>
+</dom-module>
+</body>
+</html>
