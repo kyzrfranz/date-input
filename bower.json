@@ -2,6 +2,19 @@
   "name": "date-input",
   "description": "Combination of paper-input and paper-date-picker using a dialog",
   "main": "date-input.html",
+  "version": "0.3.1",
+  "authors": [
+    "Thomas Hieber <thomas.hieber@gmail.com>"
+  ],
+  "license": "GPL 3.0",
+  "keywords": [
+    "polymer",
+    "web-components"
+  ],
+  "ignore": [
+    "**/.*",
+    "bower_components"
+  ],
   "dependencies": {
     "polymer": "Polymer/polymer#^1.4.0",
     "paper-dialog": "PolymerElements/paper-dialog#^1.1.0",
